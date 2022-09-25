@@ -30,16 +30,22 @@ const features = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
     icon: ChatBubbleBottomCenterTextIcon,
   },
+  {
+    name: 'Jumat Berkah',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    icon: ChatBubbleBottomCenterTextIcon,
+  },
 ];
 
-export default function Example() {
+export default function Features() {
   return (
     <div id="Kegiatan" className="bg-white py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <h2 className="text-lg font-semibold text-primary">Kegiatan</h2>
+          <h2 className="text-lg font-semibold text-primary">Daftar</h2>
           <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-            Kembali ke Masjid
+            Kegiatan Masjid
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam

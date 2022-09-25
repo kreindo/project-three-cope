@@ -1,4 +1,5 @@
-/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';import { Popover, Transition } from '@headlessui/react';
+/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';
+import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 
@@ -11,7 +12,7 @@ const navigation: {
   { name: 'Kontak', href: '#Kontak' },
 ];
 
-export default function Example(): JSX.Element {
+export default function Hero(): JSX.Element {
   return (
     <div className="relative overflow-hidden bg-slate-800">
       <div className="mx-auto max-w-7xl">
@@ -91,10 +92,10 @@ export default function Example(): JSX.Element {
                     <div>
                       <Image
                         className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                        src="/logo/logoFn.svg"
                         alt="logo"
-                        width={40}
-                        height={40}
+                        width={24}
+                        height={24}
                       />
                     </div>
                     <div className="-mr-2">
