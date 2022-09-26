@@ -1,8 +1,9 @@
 /* This example requires Tailwind CSS v2.0+ */ import {
-  BoltIcon,
-  ChatBubbleBottomCenterTextIcon,
+  WifiIcon,
+  AcademicCapIcon,
   GlobeAltIcon,
-  ScaleIcon,
+  BookOpenIcon,
+  SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 const features = [
@@ -10,31 +11,25 @@ const features = [
     name: "Ta'lim Pekanan",
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: GlobeAltIcon,
+    icon: AcademicCapIcon,
   },
   {
     name: 'Tahfidz Weekends',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: ScaleIcon,
+    icon: BookOpenIcon,
   },
   {
     name: 'Cafe Gratis',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: BoltIcon,
+    icon: WifiIcon,
   },
   {
     name: 'Jumat Berkah',
     description:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: ChatBubbleBottomCenterTextIcon,
-  },
-  {
-    name: 'Jumat Berkah',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: ChatBubbleBottomCenterTextIcon,
+    icon: AcademicCapIcon,
   },
 ];
 
