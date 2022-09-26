@@ -1,5 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
+/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 
@@ -131,7 +130,7 @@ export default function Hero(): JSX.Element {
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">
-                  Masjid Ar-Rohman Boyolali
+                  Masjid Ar-Rohmah Boyolali
                 </span>{' '}
                 <span className="block text-primary xl:inline">
                   Landing Page
