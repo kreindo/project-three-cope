@@ -1,4 +1,10 @@
-import { FaFacebook, FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import {
+  FaFacebook,
+  FaWhatsapp,
+  FaInstagram,
+  FaTwitter,
+  FaGithub,
+} from 'react-icons/fa';
 import Image from 'next/image';
 const socialData = [];
 export default function Footer() {
@@ -13,8 +19,12 @@ export default function Footer() {
             </h1>
           </div>
           <div>
-            <h1 className="text-gray-300">
-              &#169; Pondok Informatika, All rights reserved
+            <h1 className="text-gray-300 ">
+              &#169;
+              <span className="hover:text-gray-400 transition-all cursor-pointer">
+                <a href="https://pondokinformatika.id">Pondok Informatika</a>
+              </span>
+              , All rights reserved
             </h1>
           </div>
         </div>
@@ -22,9 +32,8 @@ export default function Footer() {
           <FaFacebook size={24} color={'#9CA3AF'} />
           <FaWhatsapp size={24} color={'#9CA3AF'} />
           <FaInstagram size={24} color={'#9CA3AF'} />
-          <FaFacebook size={24} color={'#9CA3AF'} />
-          <FaWhatsapp size={24} color={'#9CA3AF'} />
-          <FaInstagram size={24} color={'#9CA3AF'} />
+          <FaTwitter size={24} color={'#9CA3AF'} />
+          <FaGithub size={24} color={'#9CA3AF'} />
         </div>
       </div>
     </footer>
