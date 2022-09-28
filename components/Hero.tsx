@@ -1,4 +1,5 @@
-/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';import { Popover, Transition } from '@headlessui/react';
+/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';
+import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 
@@ -130,7 +131,7 @@ export default function Hero(): JSX.Element {
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">
-                  Masjid Ar-Rohmah Boyolali
+                  Masjid Jami&apos; Nurul Iman
                 </span>{' '}
                 <span className="block text-primary xl:inline">
                   Landing Page
@@ -145,7 +146,7 @@ export default function Hero(): JSX.Element {
                 <div className="rounded-md shadow">
                   <a
                     href="#"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-8 py-3 text-base font-medium text-slate-800 hover:bg-yellow-400 md:py-4 md:px-10 md:text-lg"
+                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-8 py-3 text-base font-medium text-slate-800 hover:bg-green-700 md:py-4 md:px-10 md:text-lg"
                   >
                     Google Maps
                   </a>
@@ -153,7 +154,7 @@ export default function Hero(): JSX.Element {
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href="#"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-yellow-100 px-8 py-3 text-base font-medium text-yellow-700 hover:bg-yellow-200 md:py-4 md:px-10 md:text-lg"
+                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-green-100 px-8 py-3 text-base font-medium text-green-700 hover:bg-green-200 md:py-4 md:px-10 md:text-lg"
                   >
                     Hubungi kami
                   </a>
@@ -166,7 +167,7 @@ export default function Hero(): JSX.Element {
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <Image
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-          src="https://images.unsplash.com/photo-1581141444721-0e6f8fa8397e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          src="https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
           alt="hero image"
           layout="fill"
           objectFit="cover"

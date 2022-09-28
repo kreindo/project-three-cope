@@ -1,5 +1,4 @@
-import {
-  FaFacebook,
+import {  FaFacebook,
   FaWhatsapp,
   FaInstagram,
   FaTwitter,
@@ -13,7 +12,13 @@ export default function Footer() {
       <div className="flex w-full max-w-7xl mx-auto justify-between items-center">
         <div className="flex flex-col items-start">
           <div>
-            <Image src="/logo/logoFn.svg" alt="logo" width={24} height={24} />
+            <Image
+              src="/logo/logoFn.svg"
+              alt="logo"
+              width={24}
+              height={24}
+              className="saturate-0 brightness-0"
+            />
             <h1 className="text-gray-500 text-1xl">
               Masjid Ar-Rohmah boyolali.
             </h1>
