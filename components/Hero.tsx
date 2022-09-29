@@ -1,5 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
+/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 
@@ -91,7 +90,7 @@ export default function Hero(): JSX.Element {
                   <div className="flex items-center justify-between px-5 pt-4">
                     <div>
                       <Image
-                        className="h-8 w-auto"
+                        className="h-8 w-auto saturate-0 brightness-0"
                         src="/logo/logoFn.svg"
                         alt="logo"
                         width={24}
