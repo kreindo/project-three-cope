@@ -1,4 +1,5 @@
-/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';import { Popover, Transition } from '@headlessui/react';
+/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';
+import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 
@@ -117,7 +118,7 @@ export default function Hero(): JSX.Element {
                   </div>
                   <a
                     href="#"
-                    className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-primary hover:bg-gray-100"
+                    className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-secondary hover:bg-gray-100"
                   >
                     Maps
                   </a>
