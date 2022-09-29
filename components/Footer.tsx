@@ -1,4 +1,5 @@
-import {  FaFacebook,
+import {
+  FaFacebook,
   FaWhatsapp,
   FaInstagram,
   FaTwitter,
@@ -19,9 +20,7 @@ export default function Footer() {
               height={24}
               className="saturate-0 brightness-0"
             />
-            <h1 className="text-gray-500 text-1xl">
-              Masjid Ar-Rohmah boyolali.
-            </h1>
+            <h1 className="text-gray-500 text-1xl">Masjid Muawanah.</h1>
           </div>
           <div>
             <h1 className="text-gray-300 ">

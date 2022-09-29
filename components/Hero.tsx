@@ -40,7 +40,7 @@ export default function Hero(): JSX.Element {
                       <div className="relative w-8 h-8 sm:h-10">
                         <Image
                           alt="Your Company"
-                          src="/logo/logoFnWhite.svg"
+                          src="/logo/logoFn.svg"
                           layout="fill"
                           objectFit="fill"
                         />
@@ -130,9 +130,7 @@ export default function Hero(): JSX.Element {
           <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">
-                  Masjid Jami&apos; Nurul Iman
-                </span>{' '}
+                <span className="block xl:inline">Masjid Muawanah</span>{' '}
                 <span className="block text-primary xl:inline">
                   Landing Page
                 </span>
@@ -167,7 +165,7 @@ export default function Hero(): JSX.Element {
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <Image
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-          src="https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
+          src="https://images.unsplash.com/photo-1577900576383-b6d18c1af275?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
           alt="hero image"
           layout="fill"
           objectFit="cover"
