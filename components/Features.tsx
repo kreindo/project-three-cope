@@ -38,7 +38,7 @@ export default function Features() {
     <div id="Kegiatan" className="bg-white py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <h2 className="text-lg font-semibold text-primary">Daftar</h2>
+          <h2 className="text-lg font-semibold text-secondary">Daftar</h2>
           <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
             Kegiatan Masjid
           </p>
@@ -53,7 +53,7 @@ export default function Features() {
             {features.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
-                  <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-primary text-white">
+                  <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-secondary text-white">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
                   <p className="ml-16 text-lg font-medium leading-6 text-gray-900">
