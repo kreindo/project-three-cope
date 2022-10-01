@@ -8,8 +8,8 @@ import Image from 'next/image';
 const socialData = [];
 export default function Footer() {
   return (
-    <footer className="h-32 flex items-center w-full absolute bottom-0 bg-white">
-      <div className="flex w-full max-w-7xl mx-auto justify-between items-center">
+    <footer className="h-32 flex items-center px-10 mx-auto sm:w-screen-sm md:min-w-screen-md lg:w-full absolute bottom-0 bg-white">
+      <div className="flex flex-col sm:flex-row w-full max-w-7xl mx-auto justify-between items-center">
         <div className="flex flex-col items-start">
           <div>
             <Image
