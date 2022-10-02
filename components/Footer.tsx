@@ -1,5 +1,4 @@
-import {
-  FaFacebook,
+import {  FaFacebook,
   FaWhatsapp,
   FaInstagram,
   FaTwitter,
@@ -9,7 +8,7 @@ import Image from 'next/image';
 const socialData = [];
 export default function Footer() {
   return (
-    <footer className="h-32 flex items-center px-10 border-2 border-red-500 mx-auto w-full absolute bottom-0 bg-white">
+    <footer className="h-32 flex items-center px-10 mx-auto w-full absolute bottom-0 bg-white">
       <div className="flex flex-col sm:flex-row gap-0 sm:gap-10 w-full max-w-screen-xl mx-auto justify-between items-center">
         <div className="flex flex-col items-center sm:items-start">
           <div>
