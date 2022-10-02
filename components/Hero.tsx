@@ -1,4 +1,5 @@
-/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';import { Popover, Transition } from '@headlessui/react';
+/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';
+import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 
@@ -13,9 +14,9 @@ const navigation: {
 
 export default function Hero(): JSX.Element {
   return (
-    <div className="relative overflow-hidden bg-slate-800">
+    <div className="relative overflow-hidden lg:bg-slate-800">
       <div className="mx-auto max-w-7xl">
-        <div className="relative z-10 bg-slate-800 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
+        <div className="relative z-10 lg:bg-slate-800 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
           <svg
             className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-slate-800 lg:block"
             fill="currentColor"
@@ -39,7 +40,7 @@ export default function Hero(): JSX.Element {
                       <div className="relative w-8 h-8 sm:h-10">
                         <Image
                           alt="Your Company"
-                          src="/logo/logoFn.svg"
+                          src="/logo/logoFnWhite.svg"
                           layout="fill"
                           objectFit="fill"
                         />
@@ -65,7 +66,7 @@ export default function Hero(): JSX.Element {
                   ))}
                   <a
                     href="#"
-                    className="font-medium text-secondary hover:text-secondary"
+                    className="font-medium text-primary hover:text-primary"
                   >
                     Maps
                   </a>
@@ -129,12 +130,14 @@ export default function Hero(): JSX.Element {
           <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">Masjid Raydhatul Jannah</span>{' '}
-                <span className="block text-secondary xl:inline">
+                <span className="block xl:inline">
+                  Masjid Jami&apos; Nurul Iman
+                </span>{' '}
+                <span className="block text-primary xl:inline">
                   Landing Page
                 </span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-base text-white lg:text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
                 lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
                 fugiat aliqua.
@@ -143,7 +146,7 @@ export default function Hero(): JSX.Element {
                 <div className="rounded-md shadow">
                   <a
                     href="#"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-8 py-3 text-base font-medium text-white hover:bg-emerald-900 md:py-4 md:px-10 md:text-lg"
+                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-8 py-3 text-base font-medium text-slate-800 hover:bg-green-700 md:py-4 md:px-10 md:text-lg"
                   >
                     Google Maps
                   </a>
@@ -164,7 +167,7 @@ export default function Hero(): JSX.Element {
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <Image
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-          src="https://images.unsplash.com/photo-1600421539016-cc3f0866d2b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1530&q=80"
+          src="https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
           alt="hero image"
           layout="fill"
           objectFit="cover"
