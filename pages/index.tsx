@@ -1,8 +1,8 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
+import type { NextPage } from 'next';import Head from 'next/head';
 import Hero from '../components/Hero';
 import Features from '../components/Features';
 import Footer from '../components/Footer';
+import Contact from '../components/Contact';
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +15,7 @@ const Home: NextPage = () => {
       <div className="bg-asd"></div>
       <Hero />
       <Features />
+      <Contact />
       <Footer />
     </div>
   );
