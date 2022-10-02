@@ -1,5 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
+/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 
@@ -40,7 +39,7 @@ export default function Hero(): JSX.Element {
                       <div className="relative w-8 h-8 sm:h-10">
                         <Image
                           alt="Your Company"
-                          src="/logo/logoFnWhite.svg"
+                          src="/logo/logoFnWhiteWhite.svg"
                           layout="fill"
                           objectFit="fill"
                         />
@@ -166,8 +165,8 @@ export default function Hero(): JSX.Element {
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <Image
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-          src="https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587&q=80"
+          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full brightness-50 lg:brightness-100 "
+          src="https://images.unsplash.com/photo-1600421539016-cc3f0866d2b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1530&q=80"
           alt="hero image"
           layout="fill"
           objectFit="cover"
