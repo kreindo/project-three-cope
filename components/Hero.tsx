@@ -1,5 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
+/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 
