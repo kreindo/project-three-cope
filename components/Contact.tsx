@@ -1,6 +1,12 @@
-import React from 'react';import { FaWhatsapp } from 'react-icons/fa';
+import React from 'react';import { GetServerSideProps, GetStaticProps } from 'next';
+import { FaWhatsapp } from 'react-icons/fa';
 import { FiMail, FiMapPin } from 'react-icons/fi';
-const Contact = (): JSX.Element => {
+
+export interface Final {
+  final: string;
+}
+
+const Contact = ({ final }: Final): JSX.Element => {
   return (
     <div className="p-10 max-w-screen-xl m-auto border-2 border-red-500">
       <div className="flex flex-col lg:flex-row lg:justify-between w-full gap- ">
@@ -29,8 +35,22 @@ const Contact = (): JSX.Element => {
           </div>
         </div>
       </div>
+      <div>
+        <h1 className="text-gray-700 text-3xl font-bold">hello world</h1>
+        <div className="border-2 border-red-500">{final}</div>
+      </div>
     </div>
   );
 };
 
 export default Contact;
+
+export async function getServerSideProps() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+  const data = await res.json();
+  const final = JSON.stringify(data);
+  console.log(final);
+  return {
+    props: { final },
+  };
+}
