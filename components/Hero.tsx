@@ -2,6 +2,8 @@
 import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+import { masjidContext } from '../pages';
+import { useContext } from 'react';
 
 const navigation: {
   name: string;
@@ -13,6 +15,7 @@ const navigation: {
 ];
 
 export default function Hero(): JSX.Element {
+  const masjidData = useContext(masjidContext);
   return (
     <div className="relative overflow-hidden lg:bg-slate-800">
       <div className="mx-auto max-w-7xl">
@@ -47,7 +50,9 @@ export default function Hero(): JSX.Element {
                       </div>
                     </a>
                     <div className="-mr-2 flex items-center md:hidden">
-                      <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
+                      <Popover.Button
+                        className={`inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[${masjidData.primaryColor}]`}
+                      >
                         <span className="sr-only">Open main menu</span>
                         <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -66,7 +71,7 @@ export default function Hero(): JSX.Element {
                   ))}
                   <a
                     href="#"
-                    className="font-medium text-primary hover:text-primary"
+                    className={`font-medium text-[${masjidData.primaryColor}] hover:text-[${masjidData.primaryColor}]`}
                   >
                     Maps
                   </a>
@@ -99,7 +104,9 @@ export default function Hero(): JSX.Element {
                       />
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
+                      <Popover.Button
+                        className={`inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[${masjidData.primaryColor}]`}
+                      >
                         <span className="sr-only">Close main menu</span>
                         <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -118,7 +125,7 @@ export default function Hero(): JSX.Element {
                   </div>
                   <a
                     href="#"
-                    className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-primary hover:bg-gray-100"
+                    className={`block w-full bg-gray-50 px-5 py-3 text-center font-medium text-[${masjidData.primaryColor}] hover:bg-gray-100`}
                   >
                     Maps
                   </a>
@@ -130,21 +137,23 @@ export default function Hero(): JSX.Element {
           <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">Masjid Nurussalam</span>{' '}
-                <span className="block text-primary xl:inline">
+                <span className="block xl:inline">
+                  {`Masjid ${masjidData.name}`}
+                </span>{' '}
+                <span
+                  className={`block text-[${masjidData.primaryColor}] xl:inline`}
+                >
                   Landing Page
                 </span>
               </h1>
               <p className="mt-3 text-base text-white lg:text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
+                {`${masjidData.desc}`}
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
                     href="#"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-8 py-3 text-base font-medium text-slate-800 hover:bg-green-500 md:py-4 md:px-10 md:text-lg"
+                    className={`flex w-full items-center justify-center rounded-md border border-transparent bg-[${masjidData.primaryColor}] px-8 py-3 text-base font-medium text-slate-800 hover:bg-[${masjidData.primaryColor}] md:py-4 md:px-10 md:text-lg`}
                   >
                     Google Maps
                   </a>

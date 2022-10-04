@@ -8,27 +8,31 @@ export interface Final {
 
 const Contact = ({ final }: Final): JSX.Element => {
   return (
-    <div className="p-10 max-w-screen-xl m-auto border-2 border-red-500">
-      <div className="flex flex-col lg:flex-row lg:justify-between w-full gap- ">
-        <div className="p-10 flex text-2xl justify-start items-start w-full border-2 gap-1 bg-secondary border-blue-500 text-white">
-          <FaWhatsapp size={32} className="w-full" />
-          <div>
-            <h1 className="text-white text-2xl font-bold">Foo</h1>
-            <h1 className="text-white text-1xl">+62811466132</h1>
+    <div className="p-10 flex flex-col gap-5 max-w-screen-xl m-auto border-2 border-red-500">
+      <div className="flex flex-col lg:flex-row lg:justify-between w-full ">
+        <div className="p-10 flex text-2xl justify-start items-start w-full border-2 gap-5 bg-secondary border-blue-500 text-white">
+          <FaWhatsapp size={47} className="w-fit border-2 border-green-500" />
+          <div className="border-2 border-yellow-500">
+            <h1 className="text-white text-2xl font-bold">No.Telp</h1>
+            <h1 className="text-white brightness-90 text-lg font-medium">
+              +62811466132
+            </h1>
           </div>
         </div>
-        <div className="p-10 flex text-2xl items-start w-full border-2 gap-1 bg-secondary border-blue-500 text-white">
-          <FiMail size={32} className="w-full" />
-          <div>
-            <h1 className="text-white text-2xl font-bold">Foo</h1>
-            <h1 className="text-white text-1xl">johndoe@gmail.com</h1>
+        <div className="p-10 flex text-2xl justify-start items-start w-full border-2 gap-5 bg-secondary border-blue-500 text-white">
+          <FiMail size={47} className="w-fit border-2 border-green-500" />
+          <div className="border-2 border-yellow-500">
+            <h1 className="text-white text-2xl font-bold">Email</h1>
+            <h1 className="text-white brightness-90 text-lg font-medium">
+              johndoe@gmail.com
+            </h1>
           </div>
         </div>
-        <div className="p-10 flex text-2xl items-start w-full border-2 gap-1 bg-secondary border-blue-500 text-white">
-          <FiMapPin size={32} className="w-full" />
-          <div>
-            <h1 className="text-white text-2xl font-bold">Foo</h1>
-            <h1 className="text-white text-1xl">
+        <div className="p-10 flex text-2xl justify-start items-start w-full border-2 gap-5 bg-secondary border-blue-500 text-white">
+          <FiMapPin size={47} className="w-14 border-2 border-green-500" />
+          <div className="border-2 border-yellow-500">
+            <h1 className="text-white text-2xl font-bold">Alamat</h1>
+            <h1 className="text-white brightness-90 text-lg font-medium">
               {' '}
               kp gempol desa sukarahayu, tamelang, bekasi
             </h1>
@@ -38,6 +42,10 @@ const Contact = ({ final }: Final): JSX.Element => {
       <div>
         <h1 className="text-gray-700 text-3xl font-bold">hello world</h1>
         <div className="border-2 border-red-500">{final}</div>
+        <div>
+          <h1 className="text-2xl text-gray-700 font-bold">Maps</h1>
+          <iframe src="" frameBorder="0"></iframe>
+        </div>
       </div>
     </div>
   );
