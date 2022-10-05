@@ -41,7 +41,7 @@ import {
 const masjidDatas = {
   name: 'Nurussalam',
   desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta inventore esse hic. Recusandae id labore officiis tempora in alias!',
-  primaryColor: '#39ce20',
+  primaryColor: '#8e20ce',
   secondaryColor: '#FF8E00',
   // kegiatan: [
   //   {

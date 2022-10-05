@@ -1,5 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */ import { masjidContext } from '../pages';
-import { useContext } from 'react';
+/* This example requires Tailwind CSS v2.0+ */ import { masjidContext } from '../pages';import { useContext } from 'react';
 import {
   WifiIcon,
   AcademicCapIcon,
