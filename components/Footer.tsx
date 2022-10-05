@@ -6,7 +6,9 @@ import {
   FaGithub,
 } from 'react-icons/fa';
 import Image from 'next/image';
+import { IconContext } from 'react-icons/lib';
 const socialData = [];
+
 export default function Footer() {
   return (
     <footer className="h-32 flex items-center px-10 mx-auto w-full absolute bottom-0 bg-white">
@@ -32,13 +34,25 @@ export default function Footer() {
             </h1>
           </div>
         </div>
-        <div className="flex gap-5 items-center">
-          <FaFacebook size={24} color={'#9CA3AF'} />
-          <FaWhatsapp size={24} color={'#9CA3AF'} />
-          <FaInstagram size={24} color={'#9CA3AF'} />
-          <FaTwitter size={24} color={'#9CA3AF'} />
-          <FaGithub size={24} color={'#9CA3AF'} />
-        </div>
+        <IconContext.Provider value={{ color: '#9CA3AF', size: '24' }}>
+          <div className="flex gap-5 items-center">
+            <a href="#">
+              <FaFacebook />
+            </a>
+            <a href="#">
+              <FaWhatsapp />
+            </a>
+            <a href="#">
+              <FaInstagram />
+            </a>
+            <a href="#">
+              <FaTwitter />
+            </a>
+            <a href="#">
+              <FaGithub />
+            </a>
+          </div>
+        </IconContext.Provider>
       </div>
     </footer>
   );

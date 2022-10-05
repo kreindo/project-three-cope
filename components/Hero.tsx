@@ -1,4 +1,5 @@
-/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';import { Popover, Transition } from '@headlessui/react';
+/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';
+import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import { masjidContext } from '../pages';
@@ -15,6 +16,7 @@ const navigation: {
 
 export default function Hero(): JSX.Element {
   const masjidData = useContext(masjidContext);
+
   return (
     <div className="relative overflow-hidden lg:bg-slate-800">
       <div className="mx-auto max-w-7xl">

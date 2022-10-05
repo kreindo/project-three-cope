@@ -1,9 +1,9 @@
-import type { NextPage } from 'next';import Head from 'next/head';
+import type { NextPage } from 'next';
+import Head from 'next/head';
 import Hero from '../components/Hero';
 import Features from '../components/Features';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
-import { useState, useContext } from 'react';
 import React from 'react';
 import {
   WifiIcon,
@@ -12,68 +12,67 @@ import {
   BookOpenIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
-interface MasjidDatas {
-  name: string;
-  desc: string;
-  primaryColor: string;
-  secondaryColor: string;
-  kegiatan: {
-    name:
-      | boolean
-      | React.ReactElement<any, string | React.JSXElementConstructor<any>>
-      | React.Key
-      | React.ReactFragment
-      | null
-      | undefined;
-    icon: React.FunctionComponent;
-    description:
-      | string
-      | number
-      | boolean
-      | React.ReactElement<any, string | React.JSXElementConstructor<any>>
-      | React.ReactFragment
-      | React.ReactPortal
-      | null
-      | undefined;
-  }[];
-}
+// interface MasjidDatas {
+//   name: string;
+//   desc: string;
+//   primaryColor: string;
+//   secondaryColor: string;
+//   kegiatan: {
+//     name:
+//       | boolean
+//       | React.ReactElement<any, string | React.JSXElementConstructor<any>>
+//       | React.Key
+//       | React.ReactFragment
+//       | null
+//       | undefined;
+//     icon: React.FunctionComponent;
+//     description:
+//       | string
+//       | number
+//       | boolean
+//       | React.ReactElement<any, string | React.JSXElementConstructor<any>>
+//       | React.ReactFragment
+//       | React.ReactPortal
+//       | null
+//       | undefined;
+//   }[];
+// }
 
-const masjidDatas: MasjidDatas = {
+const masjidDatas = {
   name: 'Nurussalam',
   desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta inventore esse hic. Recusandae id labore officiis tempora in alias!',
-  primaryColor: `#39ce20`,
-  secondaryColor: `#FF8E00`,
-  kegiatan: [
-    {
-      name: "Ta'lim Pekanan",
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-      icon: AcademicCapIcon,
-    },
-    {
-      name: 'Tahfidz Weekends',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-      icon: BookOpenIcon,
-    },
-    {
-      name: 'Cafe Gratis',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-      icon: WifiIcon,
-    },
-    {
-      name: 'Jumat Berkah',
-      description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-      icon: AcademicCapIcon,
-    },
-  ],
+  primaryColor: '#39ce20',
+  secondaryColor: '#FF8E00',
+  // kegiatan: [
+  //   {
+  //     name: "Ta'lim Pekanan",
+  //     description:
+  //       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+  //     icon: AcademicCapIcon,
+  //   },
+  //   {
+  //     name: 'Tahfidz Weekends',
+  //     description:
+  //       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+  //     icon: BookOpenIcon,
+  //   },
+  //   {
+  //     name: 'Cafe Gratis',
+  //     description:
+  //       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+  //     icon: WifiIcon,
+  //   },
+  //   {
+  //     name: 'Jumat Berkah',
+  //     description:
+  //       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+  //     icon: AcademicCapIcon,
+  //   },
+  // ],
 };
 
-export const masjidContext = React.createContext<MasjidDatas>(masjidDatas);
+export const masjidContext = React.createContext(masjidDatas);
 const Home: NextPage = () => {
-  const [masjidName, setMasjidName] = useState('Nurussalam');
   return (
     <masjidContext.Provider value={masjidDatas}>
       <div className="relative min-h-screen pb-32 bg-white">
@@ -83,19 +82,8 @@ const Home: NextPage = () => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Hero />
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="text-slate-800 text-2xl font-bold">{masjidName}</h1>
-          <button
-            className="rounded-md bg-black text-white font-semibold w-32 h-10"
-            onClick={() => {
-              setMasjidName('minecrtaft');
-            }}
-          >
-            Click me
-          </button>
-        </div>
         <Features />
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
       </div>
     </masjidContext.Provider>
