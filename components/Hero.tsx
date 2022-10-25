@@ -1,5 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
+/* This example requires Tailwind CSS v2.0+ */ import { Fragment } from 'react';import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import { masjidContext } from '../pages';
@@ -44,7 +43,11 @@ export default function Hero(): JSX.Element {
                       <div className="relative w-8 h-8 sm:h-10">
                         <Image
                           alt="Your Company"
-                          src="/logo/logoFn.svg"
+                          src={
+                            masjidData.logo === true
+                              ? '/logo/logoFn.svg'
+                              : '/logo/logoPlaceholder.svg'
+                          }
                           layout="fill"
                           objectFit="fill"
                         />

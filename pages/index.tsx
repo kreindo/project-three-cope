@@ -39,8 +39,9 @@ import {
 // }
 
 const masjidDatas = {
-  name: 'Masjid Name',
+  name: 'Skembet',
   desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta inventore esse hic. Recusandae id labore officiis tempora in alias!',
+  logo: false,
   primaryColor: '#c7c7c7',
   secondaryColor: '#2e2e2e',
   // kegiatan: [
