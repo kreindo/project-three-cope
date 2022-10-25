@@ -1,4 +1,5 @@
-import type { NextPage } from 'next';import Head from 'next/head';
+import type { NextPage } from 'next';
+import Head from 'next/head';
 import Hero from '../components/Hero';
 import Features from '../components/Features';
 import Footer from '../components/Footer';
@@ -38,10 +39,10 @@ import {
 // }
 
 const masjidDatas = {
-  name: 'Nurussalam',
+  name: 'Masjid Name',
   desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta inventore esse hic. Recusandae id labore officiis tempora in alias!',
-  primaryColor: '#39ce20',
-  secondaryColor: '#FF8E00',
+  primaryColor: '#c7c7c7',
+  secondaryColor: '#2e2e2e',
   // kegiatan: [
   //   {
   //     name: "Ta'lim Pekanan",
